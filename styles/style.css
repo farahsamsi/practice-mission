@@ -38,6 +38,29 @@ img{
     margin: 15px 0 15px 0;
 }
 
+h2{
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 70px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+h4{
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+
 .primary-btn{
     color: rgb(255, 255, 255);
     font-family: Poppins;
@@ -74,7 +97,7 @@ img{
     align-items: flex-start;
 }
 
-.image-container{
+#banner-container> .image-container{
     height: 100%;
 }
 
@@ -93,10 +116,33 @@ h1{
     font-size: 14px;
 }
 
+
+/* mission section */
+.cards-container{
+    display: flex;
+    gap: 20px;
+    
+}
+
+.card-container{
+    border-radius: 26px;
+    padding: 32px;
+}
+
+.card-container > .image-container{
+    width: 141px;
+    height: 141px;
+    border-radius: 26px; 
+}
+
 @media screen and (max-width:576px) {
     #banner-container{
         display: block;
     }
-    
+    .cards-container{
+        flex-direction: column;
+    }
 }
+
+
 
